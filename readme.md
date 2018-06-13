@@ -1,8 +1,8 @@
 # Reviews Site
 ## My Notes
 
-  * Review Kit Cars? Pick, three manufactures or three models to look at. OR
-  * Review Lighting Equipment. 
+  * Review Kit Car Companies. Pick, three manufactures look at
+   
   * Description can parse the start of the content. Format as bold. Look at Amazon reviews for reference.
 
 ## Overview
