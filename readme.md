@@ -1,7 +1,9 @@
 # Reviews Site
 ## My Notes
 
-TBD
+  * Review Kit Cars? Pick, three manufactures or three models to look at. OR
+  * Review Lighting Equipment. 
+  * Description can parse the start of the content. Format as bold. Look at Amazon reviews for reference.
 
 ## Overview
 Create a reviews site that categorizes reviews. Create reviews about anything you like: tech, travel, toys, they’re all good.
@@ -10,7 +12,7 @@ Create a Spring Boot + MVC app that displays a list of reviews, allowing us to c
 
 ## Tasks
 ### Required Tasks
-*  [ ] Create/configure a Spring Boot/MVC application.
+*  [x] Create/configure a Spring Boot/MVC application.
 *  [ ] Create a `Review` class for the content of reviews. Its instance variables (attributes) should include:
 	*  [ ] id (make this of type `long` – you’ll find out why later) – just use arbitrary, unique numbers for these ids
 	*  [ ] title
