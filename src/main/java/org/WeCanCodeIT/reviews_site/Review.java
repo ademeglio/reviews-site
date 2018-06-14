@@ -23,6 +23,22 @@ public class Review {
 		return id;
 	}
 
+	public String getReviewTitle() {
+		return title;
+	}
+	
+	public String getReviewImageURL() {
+		return url;
+	}
+	
+	public String getReviewCategory() {
+		return category;
+	}
+	
+	public String getReviewContent() {
+		return content;
+	}
+
 	
 
 	
