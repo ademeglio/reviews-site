@@ -1,5 +1,6 @@
 package org.WeCanCodeIT.reviews_site;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,14 +12,19 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewList = new HashMap<>();
 
 	// Constructor
-	public ReviewRepository(Review review) {
-		reviewList.put(review.getReviewId(), review);
+	public ReviewRepository(Review...reviews ) {
+		for (Review review : reviews) {
+			reviewList.put(review.getReviewId(), review);
+		}
 	}
 	
 	// Methods
 	public Review findOne(Long reviewID) {
-		// TODO Auto-generated method stub
 		return reviewList .get(reviewID);
+	}
+
+	public Collection<Review> findAll() {
+		return reviewList.values();
 	}
 
 } // End ReviewRepository()
