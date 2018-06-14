@@ -1,7 +1,7 @@
 # Reviews Site
 ## My Notes
 
-  * Review Kit Car Companies. Pick, three manufactures look at
+  * Review Kit Car Companies. Pick, three manufactures to look at
    
   * Description can parse the start of the content. Format as bold. Look at Amazon reviews for reference.
 
@@ -24,7 +24,7 @@ Create a Spring Boot + MVC app that displays a list of reviews, allowing us to c
 	  * description/synopsis
 	  * **Stretch Task:** tags (this should probably be a `Collection`)
 	*  [ ] accessor (`get*` methods) that return information about review attributes. These will allow your Thymeleaf templates to display information about reviews.
-*  [ ] Create a `ReviewRepository` class
+*  [x] Create a `ReviewRepository` class
 	*  [ ] This class should be annotated properly so that it can be injected into ReviewsController.
 	*  [ ] It should have a constructor that creates your `Review` instances and populates a Map that stores your reviews, using each review’s id as the map key.
 	*  [ ] It should have a method to find all reviews
