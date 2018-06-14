@@ -21,7 +21,6 @@ public class ReviewsControllerMockMvcTest {
 	@Test
 	public void shouldBeOkForAllCourses() throws Exception {
 		mvc.perform(get("/show-reviews")).andExpect(status().isOk());
-		
 	}
 	
 }
