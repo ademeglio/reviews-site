@@ -13,8 +13,8 @@ public class ReviewRepository {
 	
 	// Build Database
 	public ReviewRepository() {
-		Review review1 = new Review(1L, "Factory Five Racing 818C",
-										"/images/FFR-818C.jpg", 
+		Review review1 = new Review(1L, "Factory Five Racing GTM",
+										"/images/FFR-GTM.jpg", 
 										"Sports Cars", 
 										"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus sagittis aliquet."
 										+ " Vivamus viverra, quam vel lacinia porta, elit diam vulputate massa, et suscipit nunc erat "
