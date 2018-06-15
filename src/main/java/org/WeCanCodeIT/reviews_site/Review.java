@@ -8,7 +8,7 @@ public class Review {
 	private String url; // Review URL Link to static image of object being reviewed
 	private String category; // Review category
 	private String content; // Review content
-	private String companyUrl;
+	private String companyUrl; // Web site of company being reviewed
 
 	//Constructor
 	public Review(Long courseID, String reviewTitle, String reviewImageUrl, 
@@ -18,6 +18,7 @@ public class Review {
 		this.url = reviewImageUrl;
 		this.category = reviewCategory;
 		this.content = reviewContent;
+		this.companyUrl = companyUrl;
 	}
 
 	// Getters
@@ -40,9 +41,9 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
+	
+	public String getCompanyUrl() {
+		return companyUrl;
+	}
 
-	
-
-	
-	
 }  // End Review()
