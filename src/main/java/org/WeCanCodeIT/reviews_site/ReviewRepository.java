@@ -14,19 +14,19 @@ public class ReviewRepository {
 	// Build Database
 	public ReviewRepository() {
 		Review review1 = new Review(1L, "review title1",
-										"url", 
-										"category", 
-										"content");
+										"FFR-818C.jpg", 
+										"category1", 
+										"content1");
 		
 		Review review2 = new Review(2L, "review title2",
-										"url", 
-										"category", 
-										"content");
+										"url2", 
+										"category2", 
+										"content2");
 		
 		Review review3 = new Review(3L, "review title3",
-										"url", 
-										"category", 
-										"content");
+										"url3", 
+										"category3", 
+										"content3");
 		
 		// add reviews to repository
 		reviewList.put(review1.getId(), review1);
