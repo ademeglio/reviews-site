@@ -37,6 +37,8 @@ public class ReviewsControllerMockMvcTest {
 	
 	@MockBean
 	private ReviewRepository repository;
+	
+	// Testing for all reviews
 	@Test
 	public void shouldBeOkForAllReviews() throws Exception {
 		mvc.perform(get("/show-reviews")).andExpect(status().isOk());
@@ -53,4 +55,22 @@ public class ReviewsControllerMockMvcTest {
 		when(repository.findAll()).thenReturn(allReviews);
 		mvc.perform(get("/show-reviews")).andExpect(model().attribute("reviews", is(allReviews)));
 	}
+	
+	// Testing for single review
+	@Test
+	public void shouldBeOkForSingleReview() throws Exception {
+		mvc.perform(get("/review?id=1")).andExpect(status().isOk());
+	}
+	
+	@Test
+	public void shouldRouteToOneReviewView() throws Exception {
+		mvc.perform(get("/review?id=1")).andExpect(view().name(is("review")));
+	}
+	
+	@Test
+	public void shouldPutOneReviewIntoModel() throws Exception {
+		when(repository.findOne(1L)).thenReturn(firstReview);
+		mvc.perform(get("/review?id=1")).andExpect(model().attribute("reviews", is(firstReview)));
+	}
+	
 }
