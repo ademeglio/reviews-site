@@ -19,23 +19,23 @@ public class Review {
 	}
 
 	// Getters
-	public Long getReviewId() {
+	public Long getId() {
 		return id;
 	}
 
-	public String getReviewTitle() {
+	public String getTitle() {
 		return title;
 	}
 	
-	public String getReviewImageURL() {
+	public String getImageURL() {
 		return url;
 	}
 	
-	public String getReviewCategory() {
+	public String getCategory() {
 		return category;
 	}
 	
-	public String getReviewContent() {
+	public String getContent() {
 		return content;
 	}
 
