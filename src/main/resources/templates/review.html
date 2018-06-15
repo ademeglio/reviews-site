@@ -5,11 +5,11 @@
 </head>
 
 <body>
-    <h1>A single reviews</h1>
+    <h1>U.S. Kit Car Company Review</h1>
 
     <section th:each="review: ${reviews}">
-        <p th:text="${review.title}"></p>
-        <p th:text="${review.category}"></p>
+        <h2 th:text="${review.title}"></h2>
+        <p th:text="'Category: '+ ${review.category}"></p>
         <p th:text="${review.content}"></p>
         <img th:src="@{${review.ImageUrl}}" width="600" />
         
