@@ -7,12 +7,16 @@
 <body>
     <h1>A single reviews</h1>
 
-    <div th:each="review: ${reviews}">
+    <section th:each="review: ${reviews}">
         <p th:text="${review.title}"></p>
         <p th:text="${review.category}"></p>
         <p th:text="${review.content}"></p>
-        <img th:src="@{${review.ImageUrl}}" />
-
-    </div>
+        <img th:src="@{${review.ImageUrl}}" width="600" />
+        
+    </section>
+    <footer>
+        <a href="http://localhost:8080/show-reviews">Back to home</a>
+        <p>&copy; 2018 Anthony J. DeMeglio </p>
+    </footer>
 </body>
 </html>

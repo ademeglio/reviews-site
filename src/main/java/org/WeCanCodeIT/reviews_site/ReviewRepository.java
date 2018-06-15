@@ -13,20 +13,35 @@ public class ReviewRepository {
 	
 	// Build Database
 	public ReviewRepository() {
-		Review review1 = new Review(1L, "review title1",
-										"FFR-818C.jpg", 
-										"category1", 
-										"content1");
+		Review review1 = new Review(1L, "Factory Five Racing 818C",
+										"/images/FFR-818C.jpg", 
+										"Sports Cars", 
+										"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus sagittis aliquet."
+										+ " Vivamus viverra, quam vel lacinia porta, elit diam vulputate massa, et suscipit nunc erat "
+										+ "eu diam. Nunc mollis ac ex eu rutrum. Cras maximus nec augue eget sagittis. Donec fermentum "
+										+ "neque est, nec semper enim placerat id. Nam id convallis purus. Pellentesque et tellus eu "
+										+ "metus varius luctus. Vestibulum tincidunt dui ut vehicula maximus. Duis at est id lectus finibus maximus.",
+										"https://www.factoryfive.com");
 		
-		Review review2 = new Review(2L, "review title2",
-										"url2", 
-										"category2", 
-										"content2");
+		Review review2 = new Review(2L, "Sterling Sports Cars Nova",
+										"/images/Sterling-Nova.jpg", 
+										"Sports Cars", 
+										"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus sagittis aliquet."
+										+ " Vivamus viverra, quam vel lacinia porta, elit diam vulputate massa, et suscipit nunc erat "
+										+ "eu diam. Nunc mollis ac ex eu rutrum. Cras maximus nec augue eget sagittis. Donec fermentum "
+										+ "neque est, nec semper enim placerat id. Nam id convallis purus. Pellentesque et tellus eu "
+										+ "metus varius luctus. Vestibulum tincidunt dui ut vehicula maximus. Duis at est id lectus finibus maximus.",
+										"http://sterlingsportscar.com");
 		
-		Review review3 = new Review(3L, "review title3",
-										"url3", 
-										"category3", 
-										"content3");
+		Review review3 = new Review(3L, "Brunton Auto Stalker V6 Clubman",
+										"/images/BruntonAuto-StalkerV6.jpg", 
+										"Replica", 
+										"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus sagittis aliquet."
+										+ " Vivamus viverra, quam vel lacinia porta, elit diam vulputate massa, et suscipit nunc erat "
+										+ "eu diam. Nunc mollis ac ex eu rutrum. Cras maximus nec augue eget sagittis. Donec fermentum "
+										+ "neque est, nec semper enim placerat id. Nam id convallis purus. Pellentesque et tellus eu "
+										+ "metus varius luctus. Vestibulum tincidunt dui ut vehicula maximus. Duis at est id lectus finibus maximus.",
+										"http://stalkercars.com");
 		
 		// add reviews to repository
 		reviewList.put(review1.getId(), review1);

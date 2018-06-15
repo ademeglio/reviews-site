@@ -8,14 +8,16 @@ public class Review {
 	private String url; // Review URL Link to static image of object being reviewed
 	private String category; // Review category
 	private String content; // Review content
+	private String companyUrl;
 
 	//Constructor
-	public Review(Long courseID, String reviewTitle, String ReviewImageUrl, String ReviewCategory, String ReviewContent) {
+	public Review(Long courseID, String reviewTitle, String reviewImageUrl, 
+			String reviewCategory, String reviewContent, String companyUrl) {
 		this.id = courseID;
 		this.title = reviewTitle;
-		this.url = ReviewImageUrl;
-		this.category = ReviewCategory;
-		this.content = ReviewContent;
+		this.url = reviewImageUrl;
+		this.category = reviewCategory;
+		this.content = reviewContent;
 	}
 
 	// Getters
