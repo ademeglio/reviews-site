@@ -27,7 +27,7 @@ public class Review {
 		return title;
 	}
 	
-	public String getImageURL() {
+	public String getImageUrl() {
 		return url;
 	}
 	
